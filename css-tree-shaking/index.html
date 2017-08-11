@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Three treeshaking demo</title>
+    <style type="text/css">
+      *{box-sizing: border-box}
+      html, body{width: 100%; height: 100%;}
+      body{
+        padding: 0; margin: 0; display: flex;
+        align-items: stretch;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div id="app"></div>
+    <script type="text/javascript" src="bundle.js"></script>
+    <script type="text/javascript">
+      'use strict'
+      function a(){
+        alert('a')
+      }
+      function b(){
+        this.a();
+      }
+      b()
+
+    </script>
+  </body>
+</html>

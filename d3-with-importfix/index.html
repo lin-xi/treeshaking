@@ -1,0 +1,133 @@
+Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module build failed: TypeError: /Users/linxi/work/javascript/waima  i/github/treeshaking/antd-with-importfix/node_modules/lodash/lodas  h.js: Cannot read property 'map' of undefined
+  
+  - index.js:51 PluginPass.Program
+    [antd-with-importfix]/[babel-plugin-import-fix]/lib/index.js:51:    21
+  
+  - visitors.js:276 newFn
+    [antd-with-importfix]/[babel-traverse]/lib/visitors.js:276:21
+  
+  - context.js:76 NodePath._call
+    [antd-with-importfix]/[babel-traverse]/lib/path/context.js:76:18  
+  - context.js:48 NodePath.call
+    [antd-with-importfix]/[babel-traverse]/lib/path/context.js:48:17  
+  - context.js:105 NodePath.visit
+    [antd-with-importfix]/[babel-traverse]/lib/path/context.js:105:1    2
+  
+  - context.js:150 TraversalContext.visitQueue
+    [antd-with-importfix]/[babel-traverse]/lib/context.js:150:16
+  
+  - context.js:108 TraversalContext.visitSingle
+    [antd-with-importfix]/[babel-traverse]/lib/context.js:108:19
+  
+  - context.js:192 TraversalContext.visit
+    [antd-with-importfix]/[babel-traverse]/lib/context.js:192:19
+  
+  - index.js:114 Function.traverse.node
+    [antd-with-importfix]/[babel-traverse]/lib/index.js:114:17
+  
+  - index.js:79 traverse
+    [antd-with-importfix]/[babel-traverse]/lib/index.js:79:12
+  
+  - index.js:548 File.transform
+    [antd-with-importfix]/[babel-core]/lib/transformation/file/index    .js:548:35
+  
+  - pipeline.js:50 
+    [antd-with-importfix]/[babel-core]/lib/transformation/pipeline.j    s:50:19
+  
+  - index.js:564 File.wrap
+    [antd-with-importfix]/[babel-core]/lib/transformation/file/index    .js:564:16
+  
+  - pipeline.js:47 Pipeline.transform
+    [antd-with-importfix]/[babel-core]/lib/transformation/pipeline.j    s:47:17
+  
+  - index.js:49 transpile
+    [antd-with-importfix]/[babel-loader]/lib/index.js:49:20
+  
+  
+  - TypeError: /Users/linxi/work/javascript/waimai/github/treeshakin    g/antd-with-importfix/node_modules/lodash/lodash.js: Cannot read     property 'map' of undefined
+  
+  - compiler.js:76 
+    [antd-with-importfix]/[html-webpack-plugin]/lib/compiler.js:76:1    6
+  
+  - Compiler.js:304 compile
+    [antd-with-importfix]/[webpack]/lib/Compiler.js:304:11
+  
+  - Compiler.js:520 applyPluginsAsync.err
+    [antd-with-importfix]/[webpack]/lib/Compiler.js:520:14
+  
+  - Tapable.js:184 next
+    [antd-with-importfix]/[tapable]/lib/Tapable.js:184:11
+  
+  - CachePlugin.js:62 Compiler.<anonymous>
+    [antd-with-importfix]/[webpack]/lib/CachePlugin.js:62:5
+  
+  - Tapable.js:188 Compiler.applyPluginsAsyncSeries
+    [antd-with-importfix]/[tapable]/lib/Tapable.js:188:13
+  
+  - Compiler.js:517 compilation.seal.err
+    [antd-with-importfix]/[webpack]/lib/Compiler.js:517:11
+  
+  - Tapable.js:177 Compilation.applyPluginsAsyncSeries
+    [antd-with-importfix]/[tapable]/lib/Tapable.js:177:46
+  
+  - Compilation.js:654 self.applyPluginsAsync.err
+    [antd-with-importfix]/[webpack]/lib/Compilation.js:654:19
+  
+  - Tapable.js:177 Compilation.applyPluginsAsyncSeries
+    [antd-with-importfix]/[tapable]/lib/Tapable.js:177:46
+  
+  - Compilation.js:645 self.applyPluginsAsync.err
+    [antd-with-importfix]/[webpack]/lib/Compilation.js:645:11
+  
+  - Tapable.js:184 next
+    [antd-with-importfix]/[tapable]/lib/Tapable.js:184:11
+  
+  - index.js:244 Compilation.<anonymous>
+    [antd-with-importfix]/[uglifyjs-webpack-plugin]/dist/index.js:24    4:6
+  
+  - Tapable.js:186 next
+    [antd-with-importfix]/[tapable]/lib/Tapable.js:186:14
+  
+  - index.js:244 Compilation.<anonymous>
+    [antd-with-importfix]/[uglifyjs-webpack-plugin]/dist/index.js:24    4:6
+  
+  - Tapable.js:188 Compilation.applyPluginsAsyncSeries
+    [antd-with-importfix]/[tapable]/lib/Tapable.js:188:13
+  
+  - Compilation.js:640 self.applyPluginsAsync.err
+    [antd-with-importfix]/[webpack]/lib/Compilation.js:640:10
+  
+  - Tapable.js:177 Compilation.applyPluginsAsyncSeries
+    [antd-with-importfix]/[tapable]/lib/Tapable.js:177:46
+  
+  - Compilation.js:636 sealPart2
+    [antd-with-importfix]/[webpack]/lib/Compilation.js:636:9
+  
+  - Tapable.js:177 Compilation.applyPluginsAsyncSeries
+    [antd-with-importfix]/[tapable]/lib/Tapable.js:177:46
+  
+  - Compilation.js:579 Compilation.seal
+    [antd-with-importfix]/[webpack]/lib/Compilation.js:579:8
+  
+  - Compiler.js:514 applyPluginsParallel.err
+    [antd-with-importfix]/[webpack]/lib/Compiler.js:514:17
+  
+  - Tapable.js:271 
+    [antd-with-importfix]/[tapable]/lib/Tapable.js:271:11
+  
+  - Compilation.js:481 _addModuleChain
+    [antd-with-importfix]/[webpack]/lib/Compilation.js:481:11
+  
+  - Compilation.js:452 processModuleDependencies.err
+    [antd-with-importfix]/[webpack]/lib/Compilation.js:452:13
+  
+  - next_tick.js:67 _combinedTickCallback
+    internal/process/next_tick.js:67:7
+  
+  - next_tick.js:98 process._tickCallback
+    internal/process/next_tick.js:98:9
+  
+</pre><script type="text/javascript" src="bundle.js"></script><script type="text/javascript" src="bundle.js"></script><script type="text/javascript" src="bundle.js"></script><script type="text/javascript" src="bundle.js"></script><script type="text/javascript" src="bundle.js"></script><script type="text/javascript" src="bundle.js"></script><script type="text/javascript" src="bundle.js"></script><script type="text/javascript" src="bundle.js"></script><script type="text/javascript" src="bundle.js"></script><script type="text/javascript" src="bundle.js"></script><script type="text/javascript" src="bundle.js"></script><script type="text/javascript" src="bundle.js"></script><script type="text/javascript" src="bundle.js"></script><script type="text/javascript" src="bundle.js"></script><script type="text/javascript" src="bundle.js"></script><script type="text/javascript" src="bundle.js"></script><script type="text/javascript" src="bundle.js"></script><script type="text/javascript" src="bundle.js"></script><script type="text/javascript" src="bundle.js"></script>

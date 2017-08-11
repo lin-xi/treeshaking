@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Three treeshaking demo</title>
+    <style type="text/css">
+      .links {
+        stroke: #000;
+        stroke-opacity: 0.2;
+      }
+      .polygons {
+        fill: none;
+        stroke: #000;
+      }
+      .polygons :first-child {
+        fill: #f00;
+      }
+      .sites {
+        fill: #000;
+        stroke: #fff;
+      }
+      .sites :first-child {
+        fill: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <svg width="400" height="600"></svg>
+    
+    <script src="bundle.js"></script>
+  </body>
+</html>
